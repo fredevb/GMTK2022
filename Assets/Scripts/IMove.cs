@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IMove
 {
-    void Apply();
+    void Apply(IEnumerable Unit);
 }
