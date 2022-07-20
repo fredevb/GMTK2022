@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0886222cc42065542b9c62afa43b3239, type: 3}
-  m_Name: diss
+  m_Script: {fileID: 11500000, guid: e203bcc1efbc4ca43ad2c0f175b5e98a, type: 3}
+  m_Name: L-Action
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  value: 0
-  IconSprite: {fileID: 0}
-  diceType: 0
+  name: L-Action
+  moves:
+  - {x: 1, y: 0}
+  - {x: 1, y: 0}
+  - {x: 1, y: 0}
+  - {x: 0, y: 1}
+  AlternateAOE: 0
+  AOE: []

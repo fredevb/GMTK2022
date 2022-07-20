@@ -10,10 +10,10 @@ public class DiceVariant : ScriptableObject
     public string description;
     public int value;
 
-    public Sprite[] faceSprites;
     public Sprite iconSprite;
 
-
+    public Sprite[] faceSprites;
+    public ScriptableObject[] actions;
 
     public Type diceType;
     public enum Type
@@ -25,6 +25,4 @@ public class DiceVariant : ScriptableObject
         LIGHTNING,
         NATURE,
     }
-
-    
 }

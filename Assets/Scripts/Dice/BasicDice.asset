@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0886222cc42065542b9c62afa43b3239, type: 3}
+  m_Name: BasicDice
+  m_EditorClassIdentifier: 
+  name: Basic Dice
+  description: Default dice type
+  value: 1
+  iconSprite: {fileID: 0}
+  faceSprites:
+  - {fileID: 1378434659, guid: cae20728c8e91a29b803c9b6481b3552, type: 3}
+  actions:
+  - {fileID: 11400000, guid: 84d42782cd5097544bcef1de90677a65, type: 2}
+  diceType: 0
