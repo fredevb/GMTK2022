@@ -17,6 +17,9 @@ public class GameGrid : MonoBehaviour
 
     private GridCell[,] cells;
 
+    [SerializeField]
+    private GameObject TileTemplate;
+
     public void Awake()
     {
         if (Main == null)
@@ -24,6 +27,7 @@ public class GameGrid : MonoBehaviour
         else
             Debug.LogError("There can only be one game grid.");
         cells = Generate(GridSizeX, GridSizeY);
+        PopulateCells(cells);
     }
 
     public GridCell[,] Generate(int n, int m)
@@ -56,5 +60,13 @@ public class GameGrid : MonoBehaviour
     public GridCell GetCell(int x, int y)
     {
         return cells[x,y];
+    }
+
+    private void PopulateCells(GridCell[,] grid)
+    {
+        foreach (var c in grid)
+        {
+            c.Tile = Instantiate(TileTemplate, (Vector3)c.Position, Quaternion.identity, transform);
+        }
     }
 }

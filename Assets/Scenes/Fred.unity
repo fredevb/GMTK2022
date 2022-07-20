@@ -254,6 +254,7 @@ MonoBehaviour:
   gridSizeX: 10
   gridSizeY: 20
   spacing: 0.5
+  TileTemplate: {fileID: 2792040749559800661, guid: 61f8b2fbc39d60f4abf76c10a51c3f8a, type: 3}
 --- !u!4 &260441080
 Transform:
   m_ObjectHideFlags: 0

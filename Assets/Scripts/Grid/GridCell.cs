@@ -10,6 +10,8 @@ public class GridCell
 
     public Vector2 Position {get; set;}
 
+    public GameObject Tile { get; set;}
+
     public GridCell(GameGrid grid, int gx, int gy, Vector2 position)
     {
         Grid = grid;
