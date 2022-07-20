@@ -14,7 +14,7 @@ public abstract class MoveSequence : GameAction
             var dx = t.Item1;
             var dy = t.Item2;
             var g = e.GridObject;
-            g.Move(g.GX + dx, g.GY + dy);
+            g.Move(dx, dy);
         }
         
     }

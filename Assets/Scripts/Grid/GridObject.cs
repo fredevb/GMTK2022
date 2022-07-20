@@ -16,9 +16,14 @@ public class GridObject : MonoBehaviour
 
     public void Move(int dx, int dy)
     {
-        if (Grid.InGrid(GX + dx, GY + dy))
+        MoveTo(GX + dx, GY + dy);
+    }
+
+    public void MoveTo(int x, int y)
+    {
+        if (Grid.InGrid(x, y))
         {
-            Cell = Grid.GetCell(GX + dx, GY + dy);
+            Cell = Grid.GetCell(x, y);
         }
     }
 }
